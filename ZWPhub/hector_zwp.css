@@ -148,6 +148,7 @@ ul {
 /* ****************** SIDE MENU // DROPDOWNS SECTION ********************** */
 
 .side-menu {
+    display:none;
     background-color: rgba(255, 255, 255, 0.911);
     text-align: center;
     transition: 0.7s ease-in-out;
