@@ -1,0 +1,432 @@
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(0, 0, 124);
+    overflow-x: hidden;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+html {
+    height: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+.bigFont {
+    font-family: 'Bungee Spice', cursive;
+    font-size: 4.5rem;
+    padding: 2px 2px 2px 2px;
+}
+
+.font {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    padding: 2px 2px 2px 2px;
+}
+
+.font-thick {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: white;
+    padding: 2px 2px 2px 2px;
+}
+
+.defeat {
+    color: rgb(255, 0, 255) !important;
+}
+
+.victoryChild {
+    color: green !important;
+}
+
+.victoryAdult {
+    color: orangered !important;
+}
+
+.directory {
+    color: rgb(0, 0, 139);
+    padding-top: 20px;
+    font-size: larger;
+}
+
+/* ****************** HEADER SECTION ********************** */
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    height: 300px;
+    background-image: linear-gradient(to right, black, black, darkgreen);
+    width: 100%;
+}
+
+.left-header {
+    display: block;
+    width: 300px;
+}
+
+.triforce-logo {
+    display: flex;
+    justify-content: flex-start;
+    background: url(https://ae01.alicdn.com/kf/A6ea2391e142e4f8f9ed025fd731c2138c/Custom-Game-Room-Neon-Sign-Zelda-Triforce-Logo-Anime-LED-Light-Wall-Decor-Home-Bedroom-Gaming.jpg_Q90.jpg_.webp) no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+}
+
+.right-header {
+    display: block;
+    text-align: start;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.right-header > h1, .right-header > p {
+    width: 100vw;
+}
+
+.right-header > h2 {
+    display: none;
+    width: 300px;
+}
+
+@media screen and (min-width: 480px) and (max-width: 959px) {
+    .right-header > h1 {
+        display: none;
+    }
+
+    .right-header > h2 {
+        display: block !important;
+    }
+  }
+
+/* ****************** NAVIGATOR SECTION ********************** */
+
+.nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-image: linear-gradient(to right, rgb(0, 58, 0), rgb(0, 58, 0), white);
+    height: 60px;
+    width: 100vw;
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+}
+
+.left-nav {
+    display: flex;
+    justify-content: space-around;
+    width: 250px;
+}
+
+.left-nav > p {
+    cursor: pointer;
+}
+
+.right-nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.side-btn {
+   display: block;
+   margin-right: 35px;
+   cursor: pointer;
+}
+
+@media screen and (min-width: 960px) {
+    .side-btn {
+        display: none;
+    }
+  }
+
+/* ****************** SIDE MENU // DROPDOWNS SECTION ********************** */
+
+.side-menu {
+    background-color: rgba(255, 255, 255, 0.911);
+    text-align: center;
+    transition: 0.7s ease-in-out;
+    opacity: 0%;
+    width: 100%;
+    height: 400px;
+    z-index: 10;
+    transform: translateX(100%);
+    position: absolute;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.menu-close-btn {
+    display: flex;
+    margin-right: 35px;
+    width: 100vw;
+    justify-content: flex-end;
+}
+
+.menu-close-btn > img {
+    filter:invert();
+}
+
+#menu-close {
+    position: relative;
+    right: 33px;
+    cursor: pointer;
+    top: 10px;
+}
+
+.dropdown {
+    border: 1px solid white;
+    opacity: 100%;
+    display: block;
+    position: absolute;
+    text-align: center;
+    align-content: center;
+    min-height: 50px;
+    min-width: 200px;
+    height: auto;
+    width: auto;
+    background-color: rgb(0, 58, 0);
+    z-index: 3;
+    top: 48px;
+    left: 0px;
+    box-shadow: 0 1px 1px;
+}
+
+.dropdown#dropdown1 {
+    left: 0px !important;
+    cursor: default;
+}
+
+.dropdown#dropdown2 {
+    left: 80px !important;
+    cursor: default;
+}
+
+.dropdown#dropdown3 {
+    left: 150px !important;
+    cursor: default;
+}
+
+.reveal {
+    display: block !important;
+    transform: translateX(0%);
+    opacity: 100%;
+    width: 100%;
+}
+
+.hide {
+    display: none;
+    opacity: 0%;
+}
+
+/* ****************** MAIN BACKGROUND SECTION ********************** */
+
+.background {
+    display: block;
+    background: url(https://c4.wallpaperflare.com/wallpaper/376/655/729/zelda-shield-sword-triforce-red-master-sword-hylian-shield-nintendo-hd-wallpaper-preview.jpg) repeat repeat;
+    background-color: rgb(124, 0, 0);
+    background-size: 450px;
+    background-repeat: repeat;
+    height: max-content;
+    width: max-content;
+    overflow-y: scroll;
+}
+
+/* *********************** CONTENT SECTION ************************** */
+
+.empty {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: flex-end;
+    background-color: rgba(0, 0, 0, 0.720);
+    height: 250px;
+    width: 100vw;
+}
+
+.empty > p {
+    background-color: black;
+    width: 300px;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(80px, auto);
+    gap: 20px;
+    min-height: 260px;
+}
+
+.content-box {
+    display: grid;
+    grid-template-columns: 1fr;
+    border: 2px solid black;
+    background-color: rgba(0, 0, 0, 0);
+    position:relative;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+.content-box:hover, .zelda:hover {
+    top: 5px;
+    opacity: 90% !important;
+}
+
+.zelda {
+    display: block;
+    transition: all 0.4s ease-in-out;
+    background-color: rgb(0, 0, 0);
+    opacity: 0%;
+    text-align: center;
+    width: 100%;
+}
+
+@media screen and (min-width: 480px) and (max-width: 959px) {
+    .content {
+        display: none;
+    }
+  }
+
+/* *********************** CONTENT BANNER IMAGES ************************** */
+
+#skywardsword {
+    background-image: url(https://assets-prd.ignimgs.com/2021/02/23/zelda-skyward-sword-hd-button-1614064616471.jpg);
+    background-size: 100%;
+    background-position: bottom 175px right 0px;
+}
+
+#minishcap {
+    background-image: url(https://m.media-amazon.com/images/M/MV5BYTAwM2RjODgtMmYxNC00ODJkLWIwZGQtYTcxOGZlMTMwMDlhXkEyXkFqcGdeQXVyNzQzODU1NTM@._V1_FMjpg_UX1000_.jpg);
+    background-size: 100%;
+    background-position: bottom 700px right 0px;
+}
+
+#fourswords {
+    background-image: url(https://static.wikia.nocookie.net/zelda_gamepedia_en/images/b/bd/Four_Swords_Intro.png/revision/latest?cb=20110216222718);
+    background-size: 100%;
+    background-position: bottom 490px right 0px;
+}
+
+#ocarinaOT {
+    background-image: url(https://www.zeldadungeon.net/Zelda05/Ocarina-of-Time-Walkthrough-Banner.jpg);
+    background-size: 100%;
+    background-position: bottom 200px right 0px;
+}
+
+#link2Past {
+    background-image: url(https://images.gnwcdn.com/2019/usgamer/A-Link-to-the-Past-main-hed.jpg/EG11/thumbnail/1920x1080/format/jpg/quality/65/zelda-a-link-to-the-past-how-to-get-the-book-of-mudora.jpg);
+    background-size: 100%;
+    background-position: bottom 325px right 0px;
+}
+
+#linkAwkn {
+    background-image: url(https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/en_US/games/switch/t/the-legend-of-zelda-links-awakening-switch/hero);
+    background-size: 100%;
+    background-position: bottom 650px right 0px;
+}
+
+#seasonAges {
+    background-image: url(https://images.nintendolife.com/e2ba0f0fb1c34/1280x720.jpg);
+    background-size: 100%;
+    background-position: bottom 475px right 0px;
+}
+
+#linkBetween {
+    background-image: url(https://nerdreactor.com/wp-content/uploads/2013/11/A-Link-Between-Worlds-Zelda-Hilda.jpg);
+    background-size: 100%;
+    background-position: bottom 215px right 0px;
+}
+
+#triforceHeroes {  
+    background-image: url(https://cdn.vox-cdn.com/thumbor/J5hODCbNINfWITUjtvZpycyiVaA=/0x0:1280x720/1600x900/cdn.vox-cdn.com/uploads/chorus_image/image/46646368/zelda-tri-force-heroes-art_1280.0.0.jpg);
+    background-size: 100%;
+    background-position: bottom 350px right 0px;
+}
+
+#legendZelda {
+    background-image: url(https://fs-prod-cdn.nintendo-europe.com/media/images/10_share_images/games_15/virtual_console_nintendo_3ds_7/SI_3DSVC_TheLegendOfZelda_image1600w.jpg);
+    background-size: 100%;
+    background-position: bottom 320px right 0px;
+}
+
+#zeldaII {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb8OrtMbO84p2woMzAkiShygZ2rwvMIrs9AA&usqp=CAU);
+    background-size: 100%;
+    background-position: bottom 200px right 0px;
+}
+
+#majora {
+    background-image: url(https://www.zeldadungeon.net/Zelda06/Majoras-Mask-Walkthrough.jpg);
+    background-size: 100%;
+    background-position: bottom 450px right 0px;
+}
+
+#twilight {
+    background-image: url(https://www.pluggedin.com/wp-content/uploads/2020/01/the-legend-of-zelda-twilight-princess-review-image-1200x688.jpg);
+    background-size: 100%;
+    background-position: center;
+}
+
+#fourSwordsAdv {
+    background-image: url(https://fs-prod-cdn.nintendo-europe.com/media/images/10_share_images/games_15/gamecube_12/SI_GCN_TheLegendOfZeldaFourSwordsAdventures_image1600w.jpg);
+    background-size: 100%;
+    background-position: bottom 300px right 0px;
+}
+
+#windWaker {
+    background-image: url(https://m.media-amazon.com/images/M/MV5BZGFlNmY3N2QtNjM0Mi00NGQxLTgwNWUtNzRhZjkwY2U0N2U3XkEyXkFqcGdeQXVyMTA3NjAwMDc4._V1_.jpg);
+    background-size: 100%;
+    background-position: bottom 1050px right 0px;
+}
+
+#phantom {
+    background-image: url(https://images.nintendolife.com/ca94a278a177f/phantom-hourglass-cropped.900x.jpg);
+    background-size: 100%;
+    background-position: bottom 300px right 0px;
+}
+
+#spiritTracks {
+    background-image: url(https://images.nintendolife.com/6860aed1afaa0/1280x720.jpg);
+    background-size: 100%;
+    background-position: bottom 500px right 0px;
+}
+
+#wildBreath {
+    background-image: url(https://assets.vg247.com/current//2016/06/the_legend_of_zelda_breath_of_the_wild_e3_2016_header.jpg);
+    background-size: 100%;
+    background-position: bottom 300px right 0px;
+}
+
+/* *********************** FOOTER SECTION ************************** */
+
+.footer {
+    width: 100%;
+    height: 250px;
+}
+
+.footer-img {
+    background-image: url(https://www.zeldadungeon.net/wp-content/uploads/2018/02/TriforceDD2.jpg);
+    background-size: 450px;
+    background-repeat: repeat;
+    opacity: 75%;
+    height: max-content;
+    min-width: 700px;
+    min-height: 250px;
+    padding-bottom: 10px;
+}
+
+.footer-text {
+    text-align: center;
+    justify-content: center;
+    background-color: black;
+}
+
+@media screen and (min-width: 480px) and (max-width: 959px) {
+    html {
+        max-height: 100vh;
+    }
+  }
