@@ -84,7 +84,7 @@ ul {
     width: 100%;
 }
 
-.right-header > h1, .right-header > p {
+.right-header > p {
     width: 100%;
 }
 
@@ -93,7 +93,7 @@ ul {
     width: 300px;
 }
 
-@media screen and (min-width: 480px) and (max-width: 959px) {
+@media screen and (min-width: 480px) and (max-width: 1150px) {
     .right-header > h1 {
         display: none;
     }
