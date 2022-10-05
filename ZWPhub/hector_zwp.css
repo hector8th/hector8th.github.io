@@ -85,7 +85,7 @@ ul {
 }
 
 .right-header > h1, .right-header > p {
-    width: 100vw;
+    width: 100%;
 }
 
 .right-header > h2 {
