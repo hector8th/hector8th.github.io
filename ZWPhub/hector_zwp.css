@@ -270,8 +270,7 @@ ul {
 
 .content {
     display: grid;
-    /* grid-template-columns: 1fr; */
-    grid-template-rows: minmax(80px, auto);
+    grid-template-rows: minmax(120px, auto);
     gap: 20px;
     height: 260px;
     width: 100%;
