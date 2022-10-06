@@ -95,6 +95,7 @@ ul {
 .right-header > h2 {
     display: none;
     width: 100%;
+    min-width: 300px;
 }
 
 @media screen and (min-width: 480px) and (max-width: 1150px) {
