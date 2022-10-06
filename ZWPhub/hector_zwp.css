@@ -56,14 +56,15 @@ ul {
 .header {
     display: grid;
     grid-template-columns: 1fr 3fr;
-    height: 300px;
     background-image: linear-gradient(to right, black, black, darkgreen);
     width: 100%;
+    height: 100%;
 }
 
 .left-header {
     display: block;
-    width: 300px;
+    width: 100%;
+    max-width: 250px;
 }
 
 .triforce-logo {
@@ -71,8 +72,6 @@ ul {
     justify-content: flex-start;
     background: url(https://ae01.alicdn.com/kf/A6ea2391e142e4f8f9ed025fd731c2138c/Custom-Game-Room-Neon-Sign-Zelda-Triforce-Logo-Anime-LED-Light-Wall-Decor-Home-Bedroom-Gaming.jpg_Q90.jpg_.webp) no-repeat;
     background-size: cover;
-    width: 300px;
-    height: 300px;
 }
 
 .right-header {
@@ -107,6 +106,12 @@ ul {
         display: block !important;
     }
   }
+
+@media screen and (min-width: 320px) and (max-width: 1023px) {
+    .triforce-logo {
+        opacity: 0%;
+    }
+}
 
 /* ****************** NAVIGATOR SECTION ********************** */
 
