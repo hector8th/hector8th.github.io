@@ -98,7 +98,7 @@ ul {
     min-width: 300px;
 }
 
-@media screen and (min-width: 480px) and (max-width: 1150px) {
+@media screen and (min-width: 320px) and (max-width: 1150px) {
     .right-header > h1 {
         display: none;
     }
@@ -292,7 +292,7 @@ ul {
     width: 100%;
 }
 
-@media screen and (min-width: 480px) and (max-width: 1023px) {
+@media screen and (min-width: 320px) and (max-width: 1023px) {
     .content {
         display: none;
     }
@@ -432,7 +432,7 @@ ul {
     background-color: black;
 }
 
-@media screen and (min-width: 480px) and (max-width: 1023px) {
+@media screen and (min-width: 320px) and (max-width: 1023px) {
     html {
         overflow-x: hidden;
     }
