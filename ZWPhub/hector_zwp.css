@@ -155,6 +155,18 @@ ul {
     }
   }
 
+/* ****************** MAIN BACKGROUND SECTION ********************** */
+
+.background {
+    display: block;
+    background: url(https://c4.wallpaperflare.com/wallpaper/376/655/729/zelda-shield-sword-triforce-red-master-sword-hylian-shield-nintendo-hd-wallpaper-preview.jpg) repeat repeat;
+    background-color: rgb(124, 0, 0);
+    background-size: 450px;
+    background-repeat: repeat;
+    height: 100%;
+    width: 100%;
+}
+
 /* ****************** SIDE MENU // DROPDOWNS SECTION ********************** */
 
 .side-menu {
@@ -239,18 +251,6 @@ ul {
         display: none;
     }
   }
-
-/* ****************** MAIN BACKGROUND SECTION ********************** */
-
-.background {
-    display: block;
-    background: url(https://c4.wallpaperflare.com/wallpaper/376/655/729/zelda-shield-sword-triforce-red-master-sword-hylian-shield-nintendo-hd-wallpaper-preview.jpg) repeat repeat;
-    background-color: rgb(124, 0, 0);
-    background-size: 450px;
-    background-repeat: repeat;
-    height: 100%;
-    width: 100%;
-}
 
 /* *********************** CONTENT SECTION ************************** */
 
