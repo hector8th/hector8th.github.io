@@ -60,7 +60,25 @@ ul {
     justify-content: center;
     align-items: center;
     width: 80%;
+    min-width: 600px;
     height: 400px !important;
+}
+
+.musicStart {
+    display: flex;
+    position: absolute;
+    bottom: 150px;
+    right: 200px;
+    filter:invert();
+    opacity: 35%;
+}
+
+.musicStart:hover {
+    opacity: 95%;
+}
+
+.hide {
+    display: none !important;
 }
 
 /* ****************** NAVIGATOR SECTION ********************** */
@@ -87,4 +105,33 @@ ul {
     justify-content: space-evenly;
     text-align: center;
     align-items: center;
+}
+
+.nav-list > li {
+    cursor: pointer;
+}
+
+.link1 {
+    background-image: url(https://sonicfangameshq.com/forums/attachments/sonic-gif.15358/);
+    background-size: 120%;
+    opacity: 40%;
+}
+
+.link2 {
+    background-image: url(https://thumbs.gfycat.com/BeneficialCloudyBushbaby-size_restricted.gif);
+    background-size: 120%;
+    opacity: 40%;
+}
+
+/* ****************** FOOTER SECTION ********************** */
+
+.footer {
+    display: flex;
+    background-color: black;
+    flex-direction: row;
+    margin: 10px 0px 0px 0px;
+    padding: 0px;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
 }
