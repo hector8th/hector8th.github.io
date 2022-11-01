@@ -70,8 +70,8 @@ ul {
     width: 100%;
     min-width: 320px;
     top: 87%;
-    filter:invert();
-    opacity: 35%;
+    filter: invert();
+    opacity: 50%;
 }
 
 .musicStart:hover {

@@ -1,0 +1,9 @@
+27-10-2022:
+
+- I'm going to create a scroll-menu for the Content screen so that you can scroll through the selection of music. I'm having playlists of songs for each Mood that will have a correspoding Names List in the footer.
+
+- The footer, by default, is going to have a generic footer message, nothing too extravagant.
+
+- Overall, the middle of the screen is going to operate like it did with ZWPH, but with the music players that will be dynamically loaded.
+
+- As far as graphics, that's still up in the air, but THE GENERAL IDEA is to have a tiny hub that plays random music from a playlist of my own creation, until i can figure out how to link music from an online source(if possible).
